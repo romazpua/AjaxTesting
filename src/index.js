@@ -5,11 +5,17 @@ $(document).ready(function () {
     const clickMeButton = document.querySelector('#click-me')
 
     clickMeButton.addEventListener('click', () => {
-        getImages(pageNumber.value, countPictures.value, onDataReceived)
+        getImages(pageNumber.value, countPictures.value, onDataReceived);
     })
+
+    let choiceSource = document.getElementById('select_content')
+
     let pageNumber = document.getElementById('page-number')
 
     let countPictures = document.getElementById('countPictures')
+
+
+
 
     function onDataReceived(data) {
         data.forEach(
