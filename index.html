@@ -22,17 +22,33 @@
 
     <div class="container">
         <h1 class="title">Hello world!</h1>
-        <div class="content"></div>
+        <div class="content">
+<!--            pictures-->
+        </div>
     </div>
 
-    <button id="click-me">load more...</button>
+    <div class="inputs__wrap">
+        <input type="text" placeholder="task title" id="task-title">
+        <input type="text" placeholder="description" id="task-description">
+<!--        <input type="text" placeholder="" id="">-->
+<!--        <input type="text" placeholder="" id="">-->
+    </div>
 
-    <button id="get-tasks">show tasks</button>
-    <ul id="tasks__content"></ul>
+    <div class="btns__wrap">
+        <button id="click-me">LOAD PICs</button>
+        <button id="create-task">CREATE TASK</button>
+        <button id="delete-task">DELETE TASK</button>
+        <button id="get-tasks">SHOW TASKs</button>
+    </div>
+
+    <ul id="tasks__content">
+<!--        tasks-->
+    </ul>
 
 </section>
 <script src="./libs/jquery-3.5.1.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./src/consts.js"></script>
 <script src="./src/service.js"></script>
 <script src="./src/index.js"></script>
 </body>

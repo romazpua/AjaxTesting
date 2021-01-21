@@ -37,7 +37,8 @@ body * {
 .content img {
     margin: 10px;
 }
-
+#delete-task,
+#create-task,
 #get-tasks,
 #click-me {
     border: none;
@@ -51,13 +52,17 @@ body * {
     box-shadow: 0 3px 8px 1px #828282;
     transition: .2s;
     outline: none;
+    max-width: 190px;
+    width: 100%;
 }
-
+#delete-task:hover,
+#create-task:hover,
 #get-tasks:hover,
 #click-me:hover {
     background: #e5a118;
 }
-
+#delete-task:active,
+#create-task:active,
 #get-tasks:active,
 #click-me:active {
     outline: none;
@@ -97,5 +102,54 @@ body * {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    list-style: none;
+    width: 300px;
+}
+
+#tasks__content li:hover{
+    color: white;
+    background: #949494;
+    border-radius: 5px;
+}
+
+#tasks__content .task.hightlight{
+    color: white;
+    background: #676767;
+    border-radius: 5px;
+}
+
+.btns__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 420px;
     width: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.inputs__wrap{
+    margin: 20px auto;
+    width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 3px solid #160a0626;
+    border-bottom: 3px solid #160a0626;
+}
+
+.inputs__wrap input{
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #FEFEFE;
+    box-shadow: 1px 1px 4px #160a06;
+    margin: 10px;
 }
