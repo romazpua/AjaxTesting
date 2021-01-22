@@ -26,6 +26,15 @@ $(document).ready(function () {
         hightLight(target)
     })
 
+    // Deleting Selected Files
+    deleteTasksButton.addEventListener('click', () => {
+        const markElements = document.getElementsByClassName('task hightlight')
+        let transformCollection = Array.from(markElements)
+        const delList = transformCollection.forEach(elem=>{
+            deleteTask(elem.dataset.id)
+        })
+    })
+
     //highlight the selected task
     const hightLight = (el) => {
         if (el.classList.contains('hightlight')) {

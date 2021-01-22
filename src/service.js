@@ -26,7 +26,7 @@ function createTask(title, taskDescription) {
     })
 }
 
-// Функция корректирует задачу
+// Function corrects the task
 function updateTask(title) {
     const promise = axios.put('https://repetitora.net/api/JS/Tasks', {
         widgetId: 1336,
